@@ -1,7 +1,7 @@
 Pod::Spec.new do |m|
 
   m.name    = 'XPD-Mapbox-iOS-SDK'
-  m.version = '1.6.1'
+  m.version = '1.0.0'
 
   m.summary          = 'An open source toolset for building mapping applications for iOS devices.'
   m.description      = 'An open source toolset for building mapping applications for iOS devices with great flexibility for visual styling, offline use, and customizability.'
@@ -17,7 +17,7 @@ Pod::Spec.new do |m|
   }
 
   m.platform              = :ios
-  m.ios.deployment_target = '5.0'
+  m.ios.deployment_target = '8.0'
   m.requires_arc          = true
 
   m.module_name = 'XPD_Mapbox_iOS_SDK'
