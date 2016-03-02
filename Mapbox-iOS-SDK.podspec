@@ -1,6 +1,6 @@
 Pod::Spec.new do |m|
 
-  m.name    = 'Mapbox-iOS-SDK'
+  m.name    = 'XPD-Mapbox-iOS-SDK'
   m.version = '1.6.1'
 
   m.summary          = 'An open source toolset for building mapping applications for iOS devices.'
@@ -12,7 +12,7 @@ Pod::Spec.new do |m|
   m.social_media_url = 'https://twitter.com/Mapbox'
 
   m.source = {
-    :git => 'https://github.com/mapbox/mapbox-ios-sdk-legacy.git',
+    :git => 'https://github.com/xpdigit/mapbox-ios-sdk-legacy.git',
     :tag => m.version.to_s
   }
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |m|
   m.ios.deployment_target = '5.0'
   m.requires_arc          = true
 
-  m.module_name = 'Mapbox_iOS_SDK'
+  m.module_name = 'XPD_Mapbox_iOS_SDK'
 
   m.source_files = 'Proj4/proj_api.h', 'MapView/Map/*.{h,c,m}'
 
@@ -67,7 +67,7 @@ Pod::Spec.new do |m|
 
   m.xcconfig = {
     'OTHER_LDFLAGS'        => '-ObjC',
-    'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/Mapbox-iOS-SDK/Proj4"'
+    'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/XPD-Mapbox-iOS-SDK/Proj4"'
   }
 
   m.preserve_paths = 'MapView/MapView.xcodeproj', 'MapView/Map/Resources'
@@ -75,7 +75,7 @@ Pod::Spec.new do |m|
   m.vendored_libraries = 'Proj4/libProj4.a'
 
   m.dependency 'FMDB', '2.3'
-  m.dependency 'GRMustache', '7.3.0'
+  m.dependency 'GRMustache', '7.3.1'
   m.dependency 'SMCalloutView', '2.0'
 
 end
