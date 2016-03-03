@@ -12,12 +12,12 @@ Pod::Spec.new do |m|
   m.social_media_url = 'https://twitter.com/Mapbox'
 
   m.source = {
-    :git => 'https://github.com/xpdigit/mapbox-ios-sdk-legacy.git',
+    :git => 'https://github.com/xpdigit/xpd-mapbox-ios-sdk.git',
     :tag => m.version.to_s
   }
 
   m.platform              = :ios
-  m.ios.deployment_target = '8.0'
+  m.ios.deployment_target = '5.0'
   m.requires_arc          = true
 
   m.module_name = 'XPD_Mapbox_iOS_SDK'
@@ -54,10 +54,6 @@ Pod::Spec.new do |m|
     'MapView/Map/RMUserLocation.h',
     'MapView/Map/RMUserTrackingBarButtonItem.h'
   ]
-
-  m.resource_bundle = {
-    'Mapbox' => 'MapView/Map/Resources/*'
-  }
 
   m.documentation_url = 'https://www.mapbox.com/mapbox-ios-sdk-legacy'
 
