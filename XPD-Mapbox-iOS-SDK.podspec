@@ -26,7 +26,7 @@ Pod::Spec.new do |m|
 
   m.prefix_header_file = 'MapView/MapView_Prefix.pch'
 
-  m.public_header_files = "MapView/Map/*.h", "MapView/Map/FMDB/*.h"
+  m.public_header_files = "MapView/Map/*.h", "MapView/Map/FMDB/src/*/*.h"
 
   m.documentation_url = 'https://www.mapbox.com/mapbox-ios-sdk-legacy'
 
