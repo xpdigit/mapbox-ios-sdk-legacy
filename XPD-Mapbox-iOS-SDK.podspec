@@ -71,7 +71,7 @@ Pod::Spec.new do |m|
   m.vendored_libraries = 'Proj4/libProj4.a'
 
   m.dependency 'FMDB', '2.3'
-  m.dependency 'GRMustache', '7.3.1'
+  m.dependency 'GRMustache', '7.3.2'
   m.dependency 'SMCalloutView', '2.0'
 
 end
